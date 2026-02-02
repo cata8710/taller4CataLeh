@@ -1,4 +1,7 @@
 [core]
-    remote = localstore
-['remote "localstore"']
-    url = /home/ubuntu/dvcstore
+    remote = s3remote
+['remote "s3remote"']
+    url = s3://amalia-lehmann-dvcstore-477568629202-02021206/taller4
+    region = us-east-1
+['remote "local-remote"']
+    url = ../dvcstore
